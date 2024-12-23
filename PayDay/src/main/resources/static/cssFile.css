@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f6f7;
+    --text-color: #2c3e50;
+    --accent-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.bg_color {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.panel_title {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.smooth {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.color_phone {
+    color: var(--secondary-color);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input__enter,
+.input_exit,
+.input_main_transaction,
+.Ban,
+.moreinfo,
+.btn_registration,
+.big_block {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.input__enter:hover,
+.input_exit:hover,
+.input_main_transaction:hover,
+.Ban:hover,
+.btn_registration:hover,
+.big_block:hover {
+    background-color: #2980b9;
+}
+
+.Ban {
+    background-color: var(--accent-color);
+}
+
+.Ban:hover {
+    background-color: #c0392b;
+}
+
+.moreinfo {
+    background-color: var(--secondary-color);
+}
+
+.moreinfo:hover {
+    background-color: #27ae60;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form_wrapper form {
+    margin: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin: 20px 0;
+}
+
+.no_hr {
+    border-color: transparent;
+}
+
+.big_block {
+    margin: 30px 0;
+    display: inline-block;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+/* New Profile and User Info Styles */
+.profile-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.profile-info b {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+/* Transaction Info Styles */
+.transaction-details {
+    background-color: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.transaction-details b {
+    display: inline-block;
+    width: 120px;
+    color: var(--text-color);
+}
+
+/* User Edit Styles */
+.role-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.role-selection label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f1f3f5;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.role-selection input[type="checkbox"] {
+    accent-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .form_wrapper {
+        flex-direction: column;
+    }
+
+    .role-selection {
+        flex-direction: column;
+    }
+}
+/* Error Message Styling */
+.error-message {
+    color: var(--accent-color);
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+}
